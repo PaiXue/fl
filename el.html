@@ -1,0 +1,91 @@
+<html>
+<head>
+    <title>Entity Linking</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+	<!--<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">-->
+	<link href="css/context.bootstrap.css" rel="stylesheet">
+	<link href="css/context.standalone.css" rel="stylesheet">
+	<link href="css/school.css" rel="stylesheet">
+	<link href="css/main_css.css" rel="stylesheet">
+
+</head>
+<body>
+    <section id="search_result">
+		<div class="title-nav">
+			<nav class="title-bar">
+				<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header" style="height: 50px">
+				  <a class="navbar-brand" href="#">Entity Linking</a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse">
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+
+		<div class="empty-line"></div>
+
+		<main class="content-wrapper">
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-4">
+					<div class="mdc-card card--with-avatar">
+						<input class="pro-chose" type="button" value="Project 1" onclick="pro_panel(this)">
+					</div>
+				</div>
+				<div class="mdc-layout-grid__cell stretch-card mdc-layout-grid__cell--span-8" id="score-div">
+					<div class="mdc-card table-responsive" style="background-color: #FFFFFF">
+						<div class="search-banner">
+							<select id="stu-style" name="stu-style">
+								<option value="single_el">single el</option>
+								<option value="global_el">global</option>
+								<option value="name_first_el">name first</option>
+								<option value="combine_el">combine</option>
+							</select>
+							<input type="text" id="input-rank-1" placeholder="query" class="" name="rank_1" value="">
+							<input class="btn" type="button" value="Search" onclick="search_school()">
+							<!--<hr>-->
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell stretch-card" style="display: table; margin-top: 20px">
+					<p style="vertical-align: middle; display: table-cell">Keyword:</p>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+					<div class="split-word">hello</div>
+					<div class="split-word">world</div>
+				</div>
+			</div>
+
+			<div class="mdc-layout-grid__inner">
+				<div class="mdc-layout-grid__cell stretch-card">
+
+				</div>
+			</div>
+		</main>
+	</section>
+</body>
+<script src="jq/jquery.js"></script>
+<script src="jq/bootstrap.min.js"></script>
+<script src="js/myjs.js"></script>
+<script src="jq/rightMenu/jquery-1.12.0.min.js"></script>
+<script src="jq/rightMenu/context.js"></script>
+<script src="jq/rightMenu/right_menu.js"></script>
+</html>
